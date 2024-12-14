@@ -9,7 +9,7 @@ import VoiceRecognition from "./VoiceRecognition";
 const ChatbotPage = () => {
   return (
     <div className="Chat">
-        <Chatbot
+       <Chatbot
           config={config}
           actionProvider={ActionProvider}
           messageParser={MessageParser}

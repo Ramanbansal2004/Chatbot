@@ -1,7 +1,6 @@
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import useClipboard from "react-use-clipboard";
-import {useState} from "react";
-
+import React, {useState} from "react";
 
 const VoiceRecognition = () => {
     const [textToCopy, setTextToCopy] = useState();
@@ -11,7 +10,9 @@ const VoiceRecognition = () => {
 
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-IN' });
     const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition();
-
+    function stopListening(){
+        SpeechRecognition.stopListening();
+    }
     if (!browserSupportsSpeechRecognition) {
         return null
     }
@@ -29,7 +30,7 @@ const VoiceRecognition = () => {
                         {isCopied ? 'Copied!' : 'Copy to clipboard'}
                     </button>
                     <button onClick={startListening}>Start Listening</button>
-                    <button onClick={SpeechRecognition.stopListening}>Stop Listening</button>
+                    <button onClick={()=>stopListening()}>Stop Listening</button>
 
                 </div>
 

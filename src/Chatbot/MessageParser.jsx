@@ -1,9 +1,9 @@
 import React from 'react';
-
 const MessageParser = ({ children, actions }) => {
     // console.log(children.props.state)
     const { checker } = children.props.state;
     const parse = (message) => {
+        console.log(message);
         if (checker === "age") {
             actions.afterNameMessage();
             children.props.state.userData.name = message;
