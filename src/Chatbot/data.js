@@ -7,7 +7,7 @@ const data = {
         },
         slow: {
             name: "Naphrotic Syndrome",
-            imageUrl: "https://media.medigac.com/open/Feature-Photos/Hospital%20ward/Paediatrics/Nephrotic%20Syndrome.webp",
+            imageUrl: "https://www.welcomecure.com/assets/images/disease_conditions/Nephrotic-Syndrome/Nephrotic%20Syndrome_Symptoms_one.jpg",
             link: "https://my.clevelandclinic.org/health/diseases/5989-nephrotic-syndrome"
         }
     },
@@ -26,12 +26,12 @@ const data = {
     adults: {
         slow: {
             name: "Diabeties",
-            imageUrl: "https://www.hiranandanihospital.org/public/uploads/blogs/1686748634.jpg",
+            imageUrl: "https://www.elcaminohealth.org/sites/default/files/2022-11/diabetes-vs-1200x675.jpg",
             link: "https://my.clevelandclinic.org/health/diseases/7104-diabetes"
         },
         fast: {
             name: "BP",
-            imageUrl: "https://m.media-amazon.com/images/I/81thDpmpITL.jpg",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZOuush895JmhX9b02En3wtWC7IGbFNTCtqQ&s",
             link: "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/diagnosis-treatment/drc-20373417"
         }
     }
